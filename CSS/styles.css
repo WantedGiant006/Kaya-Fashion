@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    background-color: #ffe9c3;
+    color: #af2b26;
+}
+
+/* Header */
+header {
+    background-color: #ffe3b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px clamp(10px, 5vw, 40px);
+}
+.social-icons {
+    display: flex;
+    gap: clamp(10px, 5vw, 30px);
+    padding-right: clamp(10px, 5vw, 40px);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.social-icons svg {
+    fill: #af2b26;
+}
+
+/* Subheader */
+.subheader {
+    background-color: #ffeed1;
+    display: flex;
+    justify-content: center;
+    gap: clamp(15px, 5vw, 50px);
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.subheader a {
+    text-decoration: none;
+    color: #af2b26;
+    font-size: clamp(12px, 2.5vw, 20px);
+    font-weight: 700;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;  /* Hide images that overflow */
+}
+
+.carousel-track {
+    touch-action: auto;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;  /* 100% of the parent width */
+}
+
+.carousel-img {
+    width: 100vw;  /* Each image takes up the full viewport width */
+    height: auto;  /* Maintain the aspect ratio of images */
+    flex-shrink: 0;  /* Prevent images from shrinking */
+}
+
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #af2b26;
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(175, 43, 38, 0.4);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #af2b26;
+}
+
+
+/* Sections */
+section {
+    padding: 10px 20px;
+}
+h2 {
+    font-size: clamp(24px, 5vw, 50px);
+    font-weight: 700;
+    text-align: center;
+    color: #af2b26;
+}
+
+.scroll-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+}
+.scroll-row::-webkit-scrollbar {
+    display: none;
+}
+
+/* Scrollable Cards (Designer Section) */
+.scroll-row a {
+    display: inline-block;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease;
+}
+.scroll-row a:nth-child(odd) {
+    transform: translateY(-20px);
+}
+.scroll-row a:nth-child(even) {
+    transform: translateY(20px);
+}
+.scroll-row img {
+    width: clamp(150px, 40vw, 300px);
+    height: auto;
+    border-radius: 50px;
+    display: block;
+}
+
+/* Product Cards */
+.product-card {
+    position: relative;
+    width: clamp(200px, 30vw, 300px);
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+.product-card img {
+    display: block;
+    border-radius: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+
+/* About Kaya */
+.about-kaya {
+    background-image: url('/Images/Home/About\ Image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #af2b26;
+    padding: 60px clamp(20px, 5vw, 100px);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Become a Kaya Insider */
+.kaya-insider {
+    background-image: url('/Images/Home/Insider\ Image.png');
+    background-size: cover; /* Changed from contain to cover for better visibility */
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 120px 20px 100px;
+    min-height: 450px;
+    color: #af2b26;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.kaya-insider input {
+    border: 3px solid #af2b26;
+    font-family: "Comfortaa";
+    border-radius: 10px;
+    background-color: #fff4e0;
+    padding: 10px;
+    color: rgba(175, 43, 38, 0.4);
+    width: 100%;
+    max-width: 250px;
+    margin-right: 10px;
+}
+.kaya-insider button {
+    background-color: #af2b26;
+    font-family: "Comfortaa";
+    border-radius: 10px;
+    color: #fff4e0;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #ffe3b3;
+    padding: 30px 20px;
+    color: #af2b26;
+    text-align: center;
+}
+.logo {
+    padding-top: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+}
+.footer-columns > div {
+    flex: 1;
+}
+.footer-link {
+    color: #af2b26;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Scroll to top */
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #af2b26;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Tweaks */
+@media (max-width: 768px) {
+    header,
+    .subheader,
+    section,
+    footer {
+        padding: 10px 15px;
+    }
+
+    .about-kaya,
+    .kaya-insider {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kaya-insider input,
+    .kaya-insider button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
+
+    .footer-columns {
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
