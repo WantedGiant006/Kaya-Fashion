@@ -1,144 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/men-styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./Images/Kāya.png">
-    <title>Kāya - Men</title>
-</head>
-<body>
-    <!-- Header -->
-  <header>
-    <a href="./index.html"><div class="logo"><img src="./Images/Logo.png" alt="Kaya logo" width="100px"></div></a>
-    <div class="social-icons">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-        </svg>
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Comfortaa", sans-serif;
+    background-color: #ffeed1;
+    color: #af2b26;
+    overflow-x: hidden;
+}
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-        </svg>
+/* Header */
+header {
+    background-color: #ffe3b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px clamp(10px, 5vw, 40px);
+}
+.social-icons {
+    display: flex;
+    gap: clamp(10px, 5vw, 30px);
+    padding-right: clamp(10px, 5vw, 40px);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.social-icons svg {
+    fill: #af2b26;
+}
 
+/* Subheader */
+.subheader {
+    background-color: #ffeed1;
+    display: flex;
+    justify-content: center;
+    gap: clamp(15px, 5vw, 50px);
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.subheader a {
+    text-decoration: none;
+    color: #af2b26;
+    font-size: clamp(12px, 2.5vw, 20px);
+    font-weight: 700;
+}
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-        </svg>
+/* === HERO SECTION === */
+.hero-men {
+  background-image: url('/Images/Men/Men\ Hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 500px; /* ✅ ensures height fits text */
+  position: relative;
+  color: #ab2c28;
+}
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-        </svg>
-    </div>
-  </header>
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  max-width: 90%;
+}
 
-    <!-- Subheader -->
-  <div class="subheader">
-    <a href="./women.html">WOMEN</a>
-    <a href="#">MEN</a>
-    <a href="./festive.html">FESTIVE</a>
-    <a href="./contemporary.html">CONTEMPORARY</a>
-    <a href="./index.html#about">ABOUT Kāya</a>
-  </div>
+.hero-text h1 {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
 
-  <!-- Hero Section -->
-<section class="hero-men">
-  <!-- Add background image in CSS -->
-  <div class="hero-text">
-    <h1>For <span>HIM</span></h1>
-    <p>Elevated silhouettes for the modern Indian man.</p>
-  </div>
-</section>
+.hero-text h1 span {
+  display: block;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 700;
+}
 
-<!-- Products Grid -->
-<section class="products-section">
-  <div class="products-grid">
-    <div class="product-card">
-      <a href="https://www.azafashions.com/products/chatenya-mittal-velvet-embroidered-bandhagla-and-pant-set/424902"><img src="./Images/Men/1.png" alt="Product 1" /></a>
-    </div>
-    <div class="product-card">
-      <a href="https://www.azafashions.com/products/runit-gupta-khidki-applique-embroidered-jodhpuri-set/465505"><img src="./Images/Men/2.png" alt="Product 2" /></a>
-    </div>
-    <div class="product-card">
-      <a href="https://www.azafashions.com/products/manish-nagdeo-white-cotton-blend-nehru-jacket-set/646449"><img src="./Images/Men/3.png" alt="Product 3" /></a>
-    </div>
-    <div class="product-card">
-      <a href="https://www.azafashions.com/products/manish-nagdeo-red-ruby-silk-nehru-jacket-set/646447"><img src="./Images/Men/4.png" alt="Product 4" /></a>
-    </div>
-    <div class="product-card">
-      <a href="https://www.azafashions.com/products/nitika-gujral-embroidered-paisley-pattern-sherwani-set/450084"><img src="./Images/Men/5.png" alt="Product 5" /></a>
-    </div>
-    <div class="product-card">
-      <a href="https://www.azafashions.com/products/piri-india-marble-print-sherwani-and-kurta-set/605021"><img src="./Images/Men/6.png" alt="Product 6" /></a>
-    </div>
-    <div class="product-card">
-      <a href="https://www.azafashions.com/products/nitika-gujral-crystal-bead-embroidered-sherwani-set/628054"><img src="./Images/Men/7.png" alt="Product 7" /></a>
-    </div>
-    <div class="product-card">
-      <a href="https://www.azafashions.com/products/contrast-by-parth-inayat-floral-embroidered-jacket-and-kurta-set/577948"><img src="./Images/Men/8.png" alt="Product 8" /></a>
-    </div>
-  </div>
-</section>
+.hero-text p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  max-width: 500px;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
 
-<footer>
-  <div class="logo">
-    <a href="./index.html"><img src="./Images/Logo.png" alt="Kaya logo" width="100px"></a>
-  </div>
+/* === PRODUCTS GRID === */
+.products-section {
+  background-color: #ffeed1;
+  padding: 4rem 1rem;
+}
 
-  <div class="footer-columns">
-    <div>
-      <strong style="font-weight: 700; font-size: larger;">Collections</strong><br>
-      <a style="font-weight: 300; text-decoration: none; color: #af2b26;" href="./women.html">Women</a><br>
-      <a style="font-weight: 300; text-decoration: none; color: #af2b26;" href="#">Men</a><br>
-      <a style="font-weight: 300; text-decoration: none; color: #af2b26;" href="./festive.html">Festive</a><br>
-      <a style="font-weight: 300; text-decoration: none; color: #af2b26;" href="./contemporary.html">Contemporary</a>
-    </div>
-    <div>
-      <strong style="font-weight: 700; font-size: larger;">Contact Us</strong>
-      <p style="font-weight: 300">123-456-7890<br>contact@kaya.co.in</p>
-    </div>
-    <div>
-      <p style="font-weight: 700; font-size: larger;"><a href="./index.html#about" class="footer-link"><strong>About Kāya</strong></a></p>
-    </div>
-    <div>
-      <strong style="font-weight: 700; font-size: larger;">Follow Us With</strong><br>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-        </svg>
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ✅ 2 cards per row */
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-        </svg>
+.product-card {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
 
+.product-card:hover {
+  transform: scale(1.02);
+}
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-        </svg>
+.product-card img {
+  width: 100%;
+  display: block;
+}
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-        </svg>
-    </div>
-  </div>
+/* Footer */
+footer {
+    background-color: #ffe3b3;
+    padding: 30px 20px;
+    color: #af2b26;
+    text-align: center;
+}
+.logo {
+    padding-top: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+}
+.footer-columns > div {
+    flex: 1;
+}
+.footer-link {
+    color: #af2b26;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-  <div class="footer-bottom">
-    © 2025 Kāya Company Limited. All Rights Reserved.<br>
-    Designed by <span style="text-decoration: underline; font-weight: 700;">Gurvansh Singh Juneja</span> &#10140;
-  <a style="text-decoration: none; color: #af2b26;" href="https://www.instagram.com/gurvansh_juneja/">  
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-    </svg>&nbsp;&nbsp;
-  </a>
-  <a style="text-decoration: none; color: #af2b26;" href="https://github.com/WantedGiant006">
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-    </svg>
-  </a>
-  </div>
-</footer>
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
 
+/* === RESPONSIVENESS === */
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
 
-</body>
-</html>
+@media (max-width: 600px) {
+  .hero-men {
+    background-position: 70% top; /* ✅ shift image to the left */
+  }
+
+  .hero-text {
+    top: 40%;
+    transform: translateY(-40%);
+    left: 5%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h1 span {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    color: #720a07;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header,
+  .subheader,
+  section,
+  footer {
+    padding: 10px 15px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
