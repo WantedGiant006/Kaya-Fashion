@@ -48,7 +48,7 @@ header {
 
 /* === HERO SECTION === */
 .hero-cont {
-  background-image: url('/Images/Contemporary/Contemporary-Hero.png'); /* Replace with your image */
+  background-image: url('/Images/Contemporary/contemporary-hero.png'); /* Replace with your image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
