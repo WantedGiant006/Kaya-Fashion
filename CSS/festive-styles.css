@@ -48,7 +48,7 @@ header {
 
 /* === HERO SECTION === */
 .hero-festive {
-  background-image: url('/Images/Festive/Festive-Hero.png'); /* Replace with your image */
+  background-image: url('/Images/Festive/fest-hero.png'); /* Replace with your image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
