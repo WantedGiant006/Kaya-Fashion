@@ -160,7 +160,7 @@ h2 {
 
 /* About Kaya */
 .about-kaya {
-    background-image: url('/Images/Home/About\ Image.png');
+    background-image: url('../Images/Home/About-Image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ h2 {
 
 /* Become a Kaya Insider */
 .kaya-insider {
-    background-image: url('/Images/Home/Insider\ Image.png');
+    background-image: url('../Images/Home/Insider-Image.png');
     background-size: cover; /* Changed from contain to cover for better visibility */
     background-position: top center;
     background-repeat: no-repeat;
