@@ -263,6 +263,13 @@ footer {
 
 /* Mobile Responsive Tweaks */
 @media (max-width: 768px) {
+
+    .product-card,
+    .scroll-row img,
+    .product-card img {
+        border-radius: 20px;
+    }
+    
     header,
     .subheader,
     section,
