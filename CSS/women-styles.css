@@ -48,7 +48,7 @@ header {
 
 /* === HERO SECTION === */
 .hero-women {
-  background-image: url('/Images/Women/Women-Hero.png'); /* Replace with your image */
+  background-image: url('/Images/Women/w-hero.png'); /* Replace with your image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
